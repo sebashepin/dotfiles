@@ -1,5 +1,5 @@
 #/bin/bash
-apt-get -y wmii vim rxvt-unicode nitrogen fortune-mod fortunes-off chromium-browser ncdu sshfs
+apt-get install -y wmii vim rxvt-unicode nitrogen fortune-mod fortunes-off chromium-browser ncdu sshfs
 wget http://download.damieng.com/fonts/original/EnvyCodeR-PR7.zip
 unzip EnvyCodeR-PR7.zip
 mkdir -p ../.fonts
