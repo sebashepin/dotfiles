@@ -1,1 +1,6 @@
+#/usr/bin/xmodmap ~/.xmodmaprc
 MODKEY=Mod4
+export WMII_FONT='xft:envy code r:pixelsize=11:antialias=true'
+export WMII_FOCUSCOLORS=('#ffffff' '#285577' '#4C7899')
+export WMII_BACKGROUND='#333333'
+export WMII_NORMCOLORS=('#888888' '#222222' '#333333')
