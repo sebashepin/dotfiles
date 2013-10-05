@@ -1,2 +1,5 @@
 #Wmii history files
 .wmii/history*
+
+#vim history files
+.vim/.netrwhist
