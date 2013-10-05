@@ -3,8 +3,11 @@
 wmiiscript=wmiirc # For wmii.sh
 . wmii.sh
 
+if test -f /usr/bin/vmware-user; then
+    /usr/bin/vmware-user
+fi
 
-#/usr/bin/xmodmap ~/.xmodmaprc
+/usr/bin/xmodmap ~/.xmodmaprc
 # Configuration Variables
 MODKEY=Mod4
 UP=k
@@ -265,6 +268,8 @@ do
 		echo "$WMII_NORMCOLORS" "$tag"
 	fi | wmiir create "/lbar/$tag"
 done
+
+nitrogen --restore
 
 wi_eventloop
 
