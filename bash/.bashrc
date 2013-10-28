@@ -104,6 +104,7 @@ echo
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 alias ifconfig='/sbin/ifconfig'
+source /home/sebastian/.rvm/scripts/rvm
 
 export VIDEOM_DEV_DB_DATABASE_NAME=video_marketing_dev
 export VIDEOM_DEV_DB_DATABASE_USER=cloudadmin
