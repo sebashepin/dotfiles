@@ -3,11 +3,12 @@
 wmiiscript=wmiirc # For wmii.sh
 . wmii.sh
 
+/usr/bin/setxkbmap -option caps:super
+
 if test -f /usr/bin/vmware-user; then
     /usr/bin/vmware-user
 fi
 
-/usr/bin/xmodmap ~/.xmodmaprc
 # Configuration Variables
 MODKEY=Mod4
 UP=k

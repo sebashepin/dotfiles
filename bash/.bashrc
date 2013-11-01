@@ -113,11 +113,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 alias ifconfig='/sbin/ifconfig' # Add ifconfig alias (debian)
 
 
-if [ -f ~/.rvm/scripts/rvm]; then # Source rvm if available
+if [ -f ~/.rvm/scripts/rvm ]; then # Source rvm if available
     source ~/.rvm/scripts/rvm
 fi
-
-xscreensaver # Start the xscreensaver daemon
 
 export VIDEOM_DEV_DB_DATABASE_NAME=video_marketing_dev
 export VIDEOM_DEV_DB_DATABASE_USER=cloudadmin
