@@ -9,7 +9,12 @@ if test -f /usr/bin/vmware-user; then
     /usr/bin/vmware-user
 fi
 
+if test -f /usr/bin/dropbox; then
+    /usr/bin/dropbox &
+fi
+
 # Configuration Variables
+#MODKEY=Mod1
 MODKEY=Mod4
 UP=k
 DOWN=j
@@ -60,7 +65,7 @@ wmiir write /tagrules <<!
 
 # Status Bar Info
 status() {
-	echo -n $(uptime | sed 's/.*://; s/,//g') '|' $(date)
+	echo -n $(ncmpcpp --now-playing "{{%a - }{%t}|{%f}} - %l") '|' $(uptime | sed 's/.*://; s/,//g') '|' $(date)
 }
 
 local_events() { true;}
@@ -270,7 +275,10 @@ do
 	fi | wmiir create "/lbar/$tag"
 done
 
-nitrogen --restore
+# Start custom programs
+nitrogen --restore                              #   Nitrogen (wallpapers)
+x-terminal-emulator &
+[ "`ps aux | grep xscreensaver | grep -v grep`" =  "" ] && xscreensaver >/dev/null 2>/dev/null &           #   Xscreensaver
 
 wi_eventloop
 
