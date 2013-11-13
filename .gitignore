@@ -3,3 +3,6 @@
 
 #vim history files
 .vim/.netrwhist
+
+#wmii tags history
+.wmii/history.tags
