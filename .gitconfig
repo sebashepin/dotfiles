@@ -1,5 +1,19 @@
 [core]
-	editor = /usr/bin/vim
+	autocrlf = true
+	editor = vim
 [user]
-	name = Sebastian
+	name = Sebastián Henao Pinzón
 	email = sebashepin@gmail.com
+[alias]
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%>(14,trunc)%ar%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+	lgr = log --reverse --no-merges --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%>(14,trunc)%ar%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+	lgn = lg --no-merges
+	lgm = lg --author=sebastian.henao*
+	lgnm = lgn --author=sebastian.henao*
+	last = lg -n 1
+	lgc = log --color --graph --pretty=format:'%Cred%h%Creset - %<(85,trunc)%s %Cgreen%<(15,trunc)%cr %C(bold blue)<%an>%Creset%C(yellow)%d%Creset' --abbrev-commit --date=format:'%d-%b-%y'
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
+[credential "https://dev.azure.com"]
+	username = sebastian.henao
+	useHttpPath = true
