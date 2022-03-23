@@ -2,7 +2,7 @@
 sudo apt-get install -y vim fortune-mod fortunes-off ncdu sshfs fontconfig exa
 git clone https://github.com/gabrielelana/awesome-terminal-fonts ~/.awesome-terminal-fonts
 git clone https://github.com/pindexis/qfc ~/.qfc
-git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
 cd ~/.awesome-terminal-fonts
 git checkout patching-strategy

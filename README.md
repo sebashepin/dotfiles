@@ -5,6 +5,6 @@ Debian-family GNU/Linux configuration files and installation script
 
 ## Forgetmenots
 
-https://github.com/gabrielelana/awesome-terminal-fonts
-https://github.com/arialdomartini/oh-my-git
+https://www.jetbrains.com/lp/mono/
+https://github.com/ohmybash/oh-my-bash/
 https://github.com/ogham/exa
