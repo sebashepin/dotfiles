@@ -7,9 +7,12 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 cd ~/.awesome-terminal-fonts
 git checkout patching-strategy
 mkdir -p ~/.fonts
+mkdir -p ~/.config
 cp patched/*.ttf ~/.fonts
 sudo fc-cache -fv ~/.fonts
 
 mv .bashrc .bashrc_backup
 ln -s bash/.bashrc ~/.bashrc
 ln -s .Xresources ~/.Xresources
+ln -s .config/i3 ~/.config/i3
+ln -s .config/i3status ~/.config/i3status
